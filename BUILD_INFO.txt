@@ -1,0 +1,23 @@
+PLUGIN INDICADORES GLPI 11
+Versão semântica: 0.4.7 (preservada para não forçar migration)
+Build: 2026.09.09-r12-safe-recovery-zabbix-parity
+
+R12 SAFE
+- Corrige regressão R10 que deixava datasets GLPI vazios ao abrir telas Zabbix.
+- Restaura listagem completa de hosts habilitados na configuração Zabbix.
+- Corrige navegação: ao entrar em Zabbix/Conexão Zabbix a página recarrega com o contexto backend correto.
+- Disponibilidade primária segue a semântica do calculateAvailability() do Zabbix:
+  tempo do trigger em OK e PROBLEM no período integral decorrido.
+- Falhas = eventos PROBLEM (value=1) do trigger detectados no período.
+- Justificativas GLPI são informativas/auditáveis e não alteram disponibilidade, downtime ou falhas.
+- Horário operacional customizado permanece salvo por compatibilidade, sem alterar o indicador oficial Zabbix.
+- Pré-carga em lote de itens, triggers e eventos reduz consultas N×host.
+- Cache por requisição evita leituras repetidas de mapeamentos e sincronização repetida dos indicadores nativos.
+- Contagens simples de tickets usam COUNT no banco em vez de transferir todos os IDs para o PHP.
+- Agregados de grupo/global são ponderados pelo tempo calculável, evitando média simples incorreta.
+- Sem alteração de schema/tabelas.
+
+- Inclui recuperação segura do estado 'plugin not loaded' sem instalar/atualizar/remover dados.
+- Mantém versão registrada 0.4.7 e bootstrap funcional do pacote-base.
+
+Documentação GitHub consolidada: README.md + docs/ + CHANGELOG.md + RELEASE_NOTES_R12.md

@@ -1,0 +1,30 @@
+VALIDAÇÃO ESTÁTICA R11
+Este arquivo é gerado junto ao build após as correções.
+
+Escopo revisto:
+- setup/hook/menu
+- controllers
+- services GLPI e Zabbix
+- templates e navegação
+- rotas/form actions
+- SQL adapter MySQL/PostgreSQL
+- cálculo de trigger e agregações
+- pacote ZIP e sintaxe PHP
+
+Limitação:
+Sem acesso ao banco real do GLPI/Zabbix do ambiente do usuário, a validação deste pacote é estática/estrutural.
+A comparação numérica 1:1 deve ser feita no ambiente real usando o mesmo trigger e o mesmo período do relatório de disponibilidade do Zabbix.
+
+RESULTADOS DO BUILD
+- Arquivos PHP verificados: 19/19 sem erro de sintaxe.
+- Arquivos JavaScript independentes: 28/28 sem erro de sintaxe.
+- Scripts shell: 8/8 sem erro de sintaxe.
+- Templates Twig: blocos if/for balanceados.
+- CSS: chaves balanceadas.
+- Teste unitário isolado da máquina de estados do trigger:
+  * período todo OK
+  * PROBLEM no meio do período
+  * PROBLEM iniciado antes do período
+  * múltiplos eventos PROBLEM
+  * evento exatamente no início/fim
+  Todos passaram.

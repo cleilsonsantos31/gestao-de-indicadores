@@ -1,0 +1,38 @@
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporários / logs
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+cache/
+tmp/
+
+# Segredos / ambiente
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Pacotes locais / backups
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*_backup/
+*_backup.zip
+
+# Dependências locais, se criadas futuramente
+node_modules/
+vendor/
+
+# Metadados locais
+.phpunit.result.cache

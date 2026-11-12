@@ -1,0 +1,40 @@
+CORREÇÃO SEGURA DO ERRO:
+Plugin `indicadores` is not loaded.
+
+DIAGNÓSTICO:
+No GLPI 11, esse erro é gerado pelo PluginsRouterListener ANTES do Controller
+do plugin. Ele significa que o plugin não está na lista de plugins carregados
+naquela requisição (por exemplo: desabilitado, aguardando atualização, pasta
+incorreta ou cache/estado inconsistente).
+
+ESTE BUILD:
+- mantém a versão registrada 0.4.7;
+- não altera schema;
+- não executa uninstall;
+- não executa update/--force automaticamente;
+- preserva os dados existentes do plugin.
+
+PASSOS SEGUROS:
+
+1. Confirme que a pasta é exatamente:
+   plugins/indicadores/
+
+2. Faça backup da pasta atual antes de sobrescrever arquivos.
+   NÃO apague o banco nem desinstale o plugin.
+
+3. Extraia/copiei este pacote para manter:
+   plugins/indicadores/setup.php
+   plugins/indicadores/src/
+   plugins/indicadores/templates/
+   plugins/indicadores/public/
+
+4. Na raiz do GLPI execute:
+   sh plugins/indicadores/tools/r12-safe-recover.sh
+
+5. Se houver OPcache persistente, reinicie somente o PHP-FPM/container web
+   depois da validação.
+
+IMPORTANTE:
+O script de recuperação apenas valida, tenta habilitar e limpa cache.
+Se o GLPI informar que o plugin precisa de atualização, o script interrompe
+sem executar migration automaticamente.

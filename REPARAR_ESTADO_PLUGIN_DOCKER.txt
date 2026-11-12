@@ -1,0 +1,27 @@
+CENTRAL DE INDICADORES — R12 SAFE
+CORREÇÃO DO ESTADO "Plugin indicadores is not loaded"
+
+Este build mantém a versão registrada do plugin em 0.4.7.
+A substituição de arquivos não deve criar uma atualização artificial de versão.
+
+SE VOCÊ JÁ ESTIVER DENTRO DO CONTAINER:
+    cd /CAMINHO/DO/GLPI
+    sh plugins/indicadores/tools/r12-safe-recover.sh
+
+SE ESTIVER NO HOST DOCKER:
+    docker exec -it NOME_DO_CONTAINER sh -lc 'cd /CAMINHO/DO/GLPI && sh plugins/indicadores/tools/r12-safe-recover.sh'
+
+PARA SOMENTE DIAGNOSTICAR:
+    docker exec -it NOME_DO_CONTAINER sh -lc 'cd /CAMINHO/DO/GLPI && sh plugins/indicadores/tools/diagnose-plugin-state.sh'
+
+O resultado final de plugin:list precisa mostrar o plugin como Enabled/Activated.
+
+SEGURANÇA:
+- não execute uninstall;
+- não apague tabelas;
+- não use --force às cegas;
+- faça backup da pasta antes de sobrescrever;
+- se o estado for "To update/NOTUPDATED", pare e confira a versão registrada.
+
+O roteador do GLPI 11 bloqueia /plugins/indicadores/... enquanto o plugin não
+estiver carregado, portanto o erro da tela acontece antes dos Controllers.

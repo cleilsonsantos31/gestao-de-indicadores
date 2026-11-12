@@ -1,0 +1,25 @@
+CÁLCULO DE DISPONIBILIDADE — PARIDADE ZABBIX
+
+Referência funcional:
+- O relatório de disponibilidade do Zabbix calcula a proporção do tempo de cada TRIGGER em OK e PROBLEM.
+- O estado inicial do período é o último evento anterior ao início; na ausência dele, a semântica do Zabbix inicia em OK.
+- Em seguida, o tempo entre os eventos do trigger é acumulado no estado vigente até o final do período.
+- Disponibilidade (%) = OK / (OK + PROBLEM) * 100.
+- Indisponibilidade (%) = PROBLEM / (OK + PROBLEM) * 100.
+- Downtime = segundos do trigger em PROBLEM no período.
+- Falhas = quantidade de eventos PROBLEM (value=1) detectados no período.
+
+Regras de compatibilidade:
+- O fim nunca ultrapassa o instante atual.
+- Intervalos sobrepostos enviados pelo filtro são mesclados para não contar tempo/eventos duas vezes.
+- Justificativas registradas no GLPI permanecem exibidas como evidência, mas NÃO descontam downtime.
+- Horário operacional customizado permanece configurável por compatibilidade, mas NÃO altera o cálculo oficial Zabbix.
+- A chave configurada serve para localizar o item candidato e, a partir dele, um único trigger habilitado inequívoco.
+- Se o item tiver zero ou múltiplos triggers habilitados, o plugin retorna N/D em vez de escolher arbitrariamente.
+
+PERFORMANCE
+- Hosts continuam sendo listados de forma compatível com o pacote-base.
+- Itens candidatos são pré-carregados em lote.
+- Relações item->trigger são pré-carregadas em lote.
+- Eventos e último estado anterior são pré-carregados em lote para todos os triggers.
+- Histórico de 6 meses reutiliza cache em memória na mesma requisição.

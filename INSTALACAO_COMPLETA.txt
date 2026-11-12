@@ -1,0 +1,26 @@
+CENTRAL DE INDICADORES GLPI 11 — R12 SAFE RECOVERY
+
+Versão registrada: 0.4.7
+Build: 2026.09.09-r12-safe-recovery-zabbix-parity
+
+INSTALAÇÃO NOVA
+1. Faça backup.
+2. Extraia para GLPI_ROOT/plugins/indicadores.
+3. Confirme que setup.php está diretamente dentro dessa pasta.
+4. No GLPI: Configurar > Plugins > Central de Indicadores > Instalar > Ativar.
+5. Acesse Ferramentas > Central de Indicadores.
+
+ATUALIZAÇÃO DE UMA INSTALAÇÃO 0.4.7
+1. Faça backup da pasta e das tabelas glpi_plugin_indicadores_*.
+2. Substitua os arquivos mantendo a pasta plugins/indicadores.
+3. Execute na raiz do GLPI:
+   sh plugins/indicadores/tools/r12-safe-recover.sh
+4. Confirme o estado:
+   php bin/console plugin:list | grep -i indicadores
+5. Reinicie PHP-FPM/container se houver OPcache persistente.
+
+IMPORTANTE
+- NÃO desinstale para atualizar.
+- O uninstall remove as tabelas próprias e configurações do plugin.
+- NÃO use --force às cegas.
+- Consulte docs/INSTALLATION.md e docs/TROUBLESHOOTING.md.

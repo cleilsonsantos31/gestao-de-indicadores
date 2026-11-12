@@ -1,0 +1,21 @@
+CENTRAL DE INDICADORES 0.4.6 — RECOVERY R3
+
+O print em HTML puro indica que o GLPI serviu um template antigo
+apontando para arquivos CSS/JS que já não existiam no pacote novo.
+
+Este pacote evita isso de três formas:
+1. mantém compatibilidade dos assets antigos v030 até v049;
+2. o template novo leva CSS e JavaScript inline como fallback;
+3. inclui um script de recuperação que atualiza/habilita o plugin e limpa cache.
+
+PASSOS:
+1. Remova completamente plugins/indicadores.
+2. Extraia a pasta indicadores deste ZIP em plugins/.
+3. Na raiz do GLPI execute:
+   sh plugins/indicadores/tools/recover-046-r3.sh
+4. Reinicie o container/PHP-FPM se houver OPcache persistente.
+5. Abra uma NOVA aba.
+
+A tela nova deve mostrar:
+Central de Indicadores 0.4.6
+Build 2026.08.20-recovery-r3

@@ -1,0 +1,16 @@
+ATUALIZAÇÃO OBRIGATÓRIA — 0.4.6
+
+1. REMOVA a pasta antiga plugins/indicadores.
+2. Extraia a pasta indicadores deste ZIP em plugins/.
+3. Dentro do container, na raiz do GLPI, execute:
+
+   sh plugins/indicadores/tools/update-046.sh
+
+4. Se o container usa OPcache persistente, reinicie o container.
+5. Abra uma NOVA aba.
+
+A tela precisa mostrar:
+Central de Indicadores 0.4.6
+Build 2026.08.20-consolidated-r2
+
+Se não mostrar isso, o GLPI continua usando outra pasta/cópia do plugin.

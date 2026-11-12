@@ -1,0 +1,17 @@
+POLÍTICA DE ATUALIZAÇÃO — CENTRAL DE INDICADORES
+
+Versão registrada atual: 0.4.7
+Build atual: 2026.09.09-r12-safe-recovery-zabbix-parity
+
+REGRA:
+- Correções de layout, JavaScript, filtros, cards, TV, performance e Zabbix não devem aumentar a versão registrada apenas por substituição de arquivos.
+- A versão registrada deve mudar quando existir migração real que exija o fluxo de atualização do GLPI.
+- O build interno pode mudar sem alterar o estado do plugin.
+
+MOTIVO:
+Se os arquivos declaram uma versão diferente da versão instalada, o GLPI pode marcar o plugin como “To update” e deixar de carregá-lo. Nesse estado as rotas /plugins/indicadores/... são recusadas antes de alcançar os Controllers.
+
+RECUPERAÇÃO R12:
+sh plugins/indicadores/tools/r12-safe-recover.sh
+
+O script R12 não desinstala, não instala, não atualiza e não apaga dados.

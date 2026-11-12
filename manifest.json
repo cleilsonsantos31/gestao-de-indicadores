@@ -1,0 +1,493 @@
+{
+  "plugin": "Central de Indicadores",
+  "registered_version": "0.4.7",
+  "build": "2026.09.09-r12-safe-recovery-zabbix-parity",
+  "developer": "Cleilson Santos",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "size": 1003,
+      "sha256": "1be315201007289dd1fa97c6a481249539ce4e5c75d1b9dd8608edc9081d14be"
+    },
+    {
+      "path": "ARQUIVOS_DO_PLUGIN.txt",
+      "size": 4273,
+      "sha256": "6b07b91c1ccc9cc8fe6ff397fb7243774057d9ce713b6f934164e766fcd7f208"
+    },
+    {
+      "path": "ATUALIZAR_046.txt",
+      "size": 486,
+      "sha256": "a3d6f3239e43e86d9501d9dd04e839082372bb21883c25b92b1046becbe96431"
+    },
+    {
+      "path": "BUILD_INFO.txt",
+      "size": 1555,
+      "sha256": "ac714a131c4de48b332c4610d124ef30b8139ec4021fb0b2d4dcc2511bccc074"
+    },
+    {
+      "path": "CALCULO_DISPONIBILIDADE_ZABBIX.txt",
+      "size": 1649,
+      "sha256": "991d65add6a1f89e621834bf2ef43b08131e82b6e89328025811523e76721541"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 824,
+      "sha256": "8425313986c67d45752debd01693e78416e8d6c81d001609ed8e581c4767c4b6"
+    },
+    {
+      "path": "CORRECAO_PLUGIN_NOT_LOADED.txt",
+      "size": 1297,
+      "sha256": "d4d0ab016e82dc01299906fcf7159eb036399f006c3ccd261bcb37fe53c2b95e"
+    },
+    {
+      "path": "INSTALACAO_COMPLETA.txt",
+      "size": 996,
+      "sha256": "07f664e1e9d213eda3865776e2dc59f942d2312f2e748a7f686cf7467a4d1cab"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1056,
+      "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685"
+    },
+    {
+      "path": "R12_SAFE_RECOVERY.md",
+      "size": 1079,
+      "sha256": "23a1330473e2e97025276d16339e367c8781d842c91f7d5e668bace2d6a7eb32"
+    },
+    {
+      "path": "README.md",
+      "size": 9549,
+      "sha256": "7e0c53836161fdd71802928728c10eeae0368d92da98916aeb3f66413acac66b"
+    },
+    {
+      "path": "RECOVERY_R3.txt",
+      "size": 785,
+      "sha256": "ae281d36d000e268b7bb189e084494f68c513c4072aef6c65d942615fc256175"
+    },
+    {
+      "path": "RELEASE_NOTES_R12.md",
+      "size": 1261,
+      "sha256": "0782905a9d7b0ab76daea460b73219c98702b32f4a38db4dcf17997a3256ee8a"
+    },
+    {
+      "path": "REPARAR_ESTADO_PLUGIN_DOCKER.txt",
+      "size": 1114,
+      "sha256": "d38dab5171d5abfd1d515286ea559e77c3215e5f101262d6744fc4ee1c610341"
+    },
+    {
+      "path": "SECURITY.md",
+      "size": 920,
+      "sha256": "0a3a592444cd59f9adfcedd013757f838e0edf861a8622c8e73df4cd596a7e38"
+    },
+    {
+      "path": "UPDATE_POLICY.txt",
+      "size": 875,
+      "sha256": "e5da5e48b2857d976d08c79bcd9fd62167fc472f17a9620b788b8b4828312bae"
+    },
+    {
+      "path": "VALIDACAO_R11.txt",
+      "size": 1073,
+      "sha256": "e7c7d5e770b709da7b7ddc7f02213ea9b33e9a6fbf15903ffaafe6349b2e0175"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "size": 2757,
+      "sha256": "96e8750e294f01d77e3d90d946c85fe638a0ccfcddbd81aa78048eb51d0e28cc"
+    },
+    {
+      "path": "docs/CONFIGURATION.md",
+      "size": 2349,
+      "sha256": "22e5b35500ea386296fb1142ed545160af000cce29555d503c15639b2e08a86e"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "size": 3985,
+      "sha256": "4e8b2c2e192da10a61e5df0b01859907a9900cff7c8db25d993bfa168e7b2e08"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "size": 3646,
+      "sha256": "796ad385c278079c767e049f44ebedf042d997b69a765c3afc1c7926d1916912"
+    },
+    {
+      "path": "docs/PERMISSIONS.md",
+      "size": 1263,
+      "sha256": "c191b9aa22248da172479896dc851aa4bd7013403404704bf490b3dfa0c27918"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING.md",
+      "size": 1811,
+      "sha256": "dae98af802fa079bbe8048c7fe4c211a75a7c1a3e7520f2285900474f8aff09c"
+    },
+    {
+      "path": "docs/ZABBIX.md",
+      "size": 2767,
+      "sha256": "05f6ed26de3df8a8012819a09cf7d86314eb9d85d8272cedc9d6f1ae5c31db72"
+    },
+    {
+      "path": "hook.php",
+      "size": 15526,
+      "sha256": "5a980518866235cace7436bc7739f7e940854fa51e29e8b402efdeb689261d53"
+    },
+    {
+      "path": "public/css/indicadores-v030.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v040.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v041.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v042.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v043.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v044.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v045.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v046.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v047.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v048.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v049.css",
+      "size": 41592,
+      "sha256": "a6a8aec487e5e10072cd1a8ff5ce02b4c336c65c9d8c2583cb69de223172d9c7"
+    },
+    {
+      "path": "public/css/indicadores-v050.css",
+      "size": 48877,
+      "sha256": "303b61b6464b1bdb0d133e4ed27d9a51dad9de64b485137505ea9292d1cdef7b"
+    },
+    {
+      "path": "public/css/indicadores-v051.css",
+      "size": 66954,
+      "sha256": "0fea884086312391cc4777d65ac2cae470089496daf64ce8a78911739666a415"
+    },
+    {
+      "path": "public/css/indicadores-v052.css",
+      "size": 66954,
+      "sha256": "0fea884086312391cc4777d65ac2cae470089496daf64ce8a78911739666a415"
+    },
+    {
+      "path": "public/js/indicadores-v030.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v040.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v041.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v042.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v043.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v044.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v045.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v046.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v047.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v048.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v049.js",
+      "size": 26143,
+      "sha256": "054ea593a63356428bfff588029cfcd014e990dcef096a7583d550313377f4c2"
+    },
+    {
+      "path": "public/js/indicadores-v050.js",
+      "size": 31944,
+      "sha256": "2ce8633950af276bc95cce167dec640bd21d4ca761b79faee853d4b5d7dd50db"
+    },
+    {
+      "path": "public/js/indicadores-v051.js",
+      "size": 36032,
+      "sha256": "f24ed1b752981efb9118d1e7636613cf5ebb7484c8ba6b17e97e87c31a31182f"
+    },
+    {
+      "path": "public/js/indicadores-v052.js",
+      "size": 36032,
+      "sha256": "f24ed1b752981efb9118d1e7636613cf5ebb7484c8ba6b17e97e87c31a31182f"
+    },
+    {
+      "path": "public/js/menu-target-v030.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v040.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v041.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v042.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v043.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v044.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v045.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v046.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v047.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v048.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v049.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v050.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v051.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "public/js/menu-target-v052.js",
+      "size": 1103,
+      "sha256": "30056c8179d87344a4466dde53ab6ab65e113d91895089469047e69932495293"
+    },
+    {
+      "path": "setup.php",
+      "size": 1473,
+      "sha256": "0a22caccd751b691da3547ae118f8dd47ee50a2da3de68de11bcb4005b6d8e15"
+    },
+    {
+      "path": "src/Controller/AdminController.php",
+      "size": 8685,
+      "sha256": "8139e40ffbcd0397a9a59de0c1ed9d7df44c6dca550b0f4fd860f7a00429c95e"
+    },
+    {
+      "path": "src/Controller/AppController.php",
+      "size": 28742,
+      "sha256": "ab6ecb859d45097d15dc629834f37c4c8725bc4159f2ced7b27077d7fa39c718"
+    },
+    {
+      "path": "src/Controller/ConfigController.php",
+      "size": 767,
+      "sha256": "ef226c1e28db758b7805da1e463b5a27900ea212a134759b19d0658291046ba3"
+    },
+    {
+      "path": "src/Controller/DashboardController.php",
+      "size": 1117,
+      "sha256": "6b9fb9b34de56720883dc068911bcd87499ea9e539a25f11edb6ef11831cd390"
+    },
+    {
+      "path": "src/Controller/ExportController.php",
+      "size": 21506,
+      "sha256": "1b42c6dcf0dfaa849e2a518f41b25df29f59aa16f455a62aa404b2bdac4a41ff"
+    },
+    {
+      "path": "src/Controller/JustificationController.php",
+      "size": 3922,
+      "sha256": "ae01915baa87b6fe8cfc12d39dd09f1a020c423afbe7506ea61aabe8d629f6ac"
+    },
+    {
+      "path": "src/Controller/TvController.php",
+      "size": 1245,
+      "sha256": "d69bf6977d7190896139339d9dcda44439cc33a14a6864a50dd6bd900ad8be11"
+    },
+    {
+      "path": "src/Controller/ZabbixController.php",
+      "size": 916,
+      "sha256": "fa6487898e82b144e78b4157516ee0107b22a06242c7c760a2d220f9f5a03260"
+    },
+    {
+      "path": "src/Menu.php",
+      "size": 1690,
+      "sha256": "3d7821d0537911cfada696b13db062835be999db08438d892afe62c6aa55e6a9"
+    },
+    {
+      "path": "src/Service/AdminService.php",
+      "size": 35071,
+      "sha256": "0d9425836b73a11a28f0df15efe2602716b4e2569f61d806d51c4acda1a06f45"
+    },
+    {
+      "path": "src/Service/AnalyticsService.php",
+      "size": 65920,
+      "sha256": "f8ea311b6855cad048611a824d70cc3cb2dfa009f26d8c11e960aac7f80c3e0c"
+    },
+    {
+      "path": "src/Service/ConfigService.php",
+      "size": 5710,
+      "sha256": "ad5bb3564a9e7b6cc3657d43cdf5fc9217c781a7b583e957e8afadffcf3cfc32"
+    },
+    {
+      "path": "src/Service/FilterService.php",
+      "size": 10766,
+      "sha256": "525f9d46325142bfad9cf5ca9585b67c832ace837a1298dab1182896244bf077"
+    },
+    {
+      "path": "src/Service/GlpiTime.php",
+      "size": 2379,
+      "sha256": "45991b36e206ac7a630a595917ffd10916811e7211444cea04bff7dab6927535"
+    },
+    {
+      "path": "src/Service/TicketMetricsService.php",
+      "size": 44311,
+      "sha256": "1a8fddb74f589d44f669294513b139beb757c52afa92df255f246d3b0bdac848"
+    },
+    {
+      "path": "src/Service/ZabbixDbAdapter.php",
+      "size": 9334,
+      "sha256": "f21708ca55dfd18568e7cb4d07e875aa285de31cbf8db02fb0fab9296fb2fca1"
+    },
+    {
+      "path": "src/Service/ZabbixService.php",
+      "size": 40579,
+      "sha256": "6f32e4fcd8112f4ec89f6e77368b02a2a4a9e53699a68920b34fffc8e54ee198"
+    },
+    {
+      "path": "templates/app.html.twig",
+      "size": 231940,
+      "sha256": "d4ae1b97171a8a33e9934f9337c70efe676fae0c31236cc7e927b0e13982899a"
+    },
+    {
+      "path": "templates/partials/history_proto.html.twig",
+      "size": 727,
+      "sha256": "787654ca2640a6760374aefe7e790a5eacf0cae16ffda698dda3ad0ed7ca1aca"
+    },
+    {
+      "path": "templates/tv.html.twig",
+      "size": 111950,
+      "sha256": "a1691af6fbab0932fa115adae338825ec3975a76fa6bb07bd2c14adedae2e9f6"
+    },
+    {
+      "path": "tools/diagnose-not-loaded.sh",
+      "size": 641,
+      "sha256": "420e98be4afcd73dd854781be39e516ef6fbd8e13238bb0f62f847c48882b48b"
+    },
+    {
+      "path": "tools/diagnose-plugin-state.sh",
+      "size": 606,
+      "sha256": "4a0cb19d93e45906eaeac487df7a5bba21ece6fb863205929a149988af90525f"
+    },
+    {
+      "path": "tools/fix-not-loaded.sh",
+      "size": 124,
+      "sha256": "ac7a8455ecf9f7dc85ba14aae726ac4e6f2e589e2d74b2f1ff1b986432c3f008"
+    },
+    {
+      "path": "tools/r12-safe-recover.sh",
+      "size": 2073,
+      "sha256": "90d8a3121cc6a88f6c0852c42e34f5729769f15a6249c219f3aa9ab10d650399"
+    },
+    {
+      "path": "tools/recover-046-r3.sh",
+      "size": 1229,
+      "sha256": "33d7b40631e8c299872f568c6876eefd5815537e2423f3bb7a0bba704524a2a6"
+    },
+    {
+      "path": "tools/repair-plugin-state.sh",
+      "size": 124,
+      "sha256": "ac7a8455ecf9f7dc85ba14aae726ac4e6f2e589e2d74b2f1ff1b986432c3f008"
+    },
+    {
+      "path": "tools/update-046.sh",
+      "size": 1483,
+      "sha256": "71f3eed1c62488c94bffd7b6aa2ae58b3a934a8d1b55f67067f601801d7ea97b"
+    },
+    {
+      "path": "tools/update-047.sh",
+      "size": 622,
+      "sha256": "c238d5e462fcd10315f6f048d2538c86b66157befe47b2a0e568aa32169b0d21"
+    },
+    {
+      "path": "tools/verify-046.sh",
+      "size": 594,
+      "sha256": "2e5beba0acd6187ba74ef648332c3e7176132d8704ba299d08d83356c1c0d493"
+    }
+  ]
+}
